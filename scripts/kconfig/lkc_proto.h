@@ -3,7 +3,7 @@
 /* confdata.c */
 P(conf_parse,void,(const char *name));
 P(conf_read,int,(const char *name));
-P(conf_read_simple,int,(const char *name, int));
+P(conf_read_simple,int,(const char *name, int, int));
 P(conf_write_defconfig,int,(const char *name));
 P(conf_write,int,(const char *name));
 P(conf_write_autoconf,int,(void));
@@ -14,6 +14,7 @@ P(conf_set_message_callback, void,(void (*fn)(const char *fmt, va_list ap)));
 /* menu.c */
 P(rootmenu,struct menu,);
 
+P(menu_is_empty, bool, (struct menu *menu));
 P(menu_is_visible, bool, (struct menu *menu));
 P(menu_has_prompt, bool, (struct menu *menu));
 P(menu_get_prompt,const char *,(struct menu *menu));
