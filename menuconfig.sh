@@ -10,7 +10,7 @@ TOOLCHAIN=$HOME/build/toolchain/gcc-linaro-4.9-2016.02-x86_64_aarch64-linux-gnu
 export ARCH=arm64
 export CROSS_COMPILE=$TOOLCHAIN/bin/aarch64-linux-gnu-
 
-[ "$TARGET" ] || TARGET=stock
+[ "$TARGET" ] || TARGET=twrp
 DEFCONFIG=${TARGET}_defconfig
 DEFCONFIG_FILE=$RDIR/arch/$ARCH/configs/$DEFCONFIG
 

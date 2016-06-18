@@ -1,5 +1,5 @@
 #!/bin/bash
-# Stock kernel for LG G4 build script by jcadduono
+# TWRP kernel for LG G4 build script by jcadduono
 
 ################### BEFORE STARTING ################
 #
@@ -37,7 +37,7 @@ THREADS=5
 export ARCH=arm64
 export CROSS_COMPILE=$TOOLCHAIN/bin/aarch64-linux-gnu-
 
-[ "$TARGET" ] || TARGET=stock
+[ "$TARGET" ] || TARGET=twrp
 [ "$1" ] && {
 	VARIANT=$1
 } || {
